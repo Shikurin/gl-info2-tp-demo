@@ -18,6 +18,11 @@ public class Money {
     }
 
 
+    public Money add(Money that) {
+        return new Money(this.amount+that.amount,this.currency);
+    }
+
+
     public String toString() {
         return "Le montant est de " + this.amount + " " + this.currency + ".";
     }
